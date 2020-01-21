@@ -9,7 +9,3 @@ orders:
             namespace: default
             chartvalue: values.yaml
             chartdeploystrategy: Canary
-          - path: incubator/mysqlha
-            namespace: default
-            chartvalue: values.yaml
-            chartdeploystrategy: Canary
