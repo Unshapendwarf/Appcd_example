@@ -5,7 +5,8 @@ orders:
       - repository: https://github.com/helm/charts.git
         revision: master
         subpaths:
-          - path: incubator/zookeeper
+          - name: incube_zooke
+            path: incubator/zookeeper
             namespace: default
             chartvalue: values.yaml
             chartdeploystrategy: Canary
