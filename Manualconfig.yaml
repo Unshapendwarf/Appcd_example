@@ -5,7 +5,7 @@ orders:
       - repository: https://github.com/helm/charts.git
         revision: master
         subpaths:
-          - name: incube_zooke
+          - name: incube-zooke
             path: incubator/zookeeper
             namespace: default
             chartvalue: values.yaml
