@@ -5,9 +5,15 @@ orders:
       - repository: https://github.com/helm/charts.git
         revision: master
         subpaths:
-          - name: chaoskube-in
+          - name: chaoskube-out
+            path: stable/chartmuseum
+            namespace: default
+            chartvalue: values.yaml
+            chartdeploystrategy: Canary
+          - name: chart-out
             path: stable/chaoskube
             namespace: default
             chartvalue: values.yaml
             chartdeploystrategy: Canary
+
 
