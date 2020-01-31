@@ -7,7 +7,7 @@ orders:
         subpaths:
           - name: chaoskube-out
             path: stable/chartmuseum
-            namespace: default
+            namespace: argo
             chartvalue: values.yaml
             chartdeploystrategy: Canary
           - name: chart-out
