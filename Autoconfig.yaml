@@ -2,15 +2,15 @@
 orders:
   - destination: https://kubernetes.default.svc
     charts:
-      - repository: https://github.com/helm/charts.git
+      - repository: https://github.com/unshapendwarf/charts.git
         revision: master
         subpaths:
-          - name: chaoskube-out
+          - name: chaoskube-out-hong
             path: stable/chartmuseum
             namespace: argo
             chartvalue: values.yaml
             chartdeploystrategy: Canary
-          - name: chart-out
+          - name: chart-out-hong
             path: stable/chaoskube
             namespace: default
             chartvalue: values.yaml
